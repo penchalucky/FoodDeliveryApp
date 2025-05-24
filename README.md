@@ -89,7 +89,10 @@ CREATE TABLE `foodapp`.`orderhistory` (
   `orderId` INT NOT NULL,
   `userId` INT NOT NULL,
   `orderDate` DATETIME NOT NULL,
-  `totalAmount` FLOAT NOT NULL,
+  `totalAmount` FLOAT NOT NULL,![Home](https://github.com/user-attachments/assets/f0b63a5e-2ab6-4854-9244-ca29a3e4a321)
+![menu](https://github.com/user-attachments/assets/9c6be8b4-601d-4d9a-a251-b3d1b50b63dc)
+![home ](https://github.com/user-attachments/assets/be063d2f-a544-4dce-8451-53bf7d069be0)
+
   `status` VARCHAR(45) NULL,
   PRIMARY KEY (`orderHistoryId`),
   INDEX `fk6_idx` (`orderId` ASC) VISIBLE,
@@ -102,5 +105,4 @@ CREATE TABLE `foodapp`.`orderhistory` (
   CONSTRAINT `fk7`
     FOREIGN KEY (`userId`)
     REFERENCES `foodapp`.`user` (`userId`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+    ON DELETE NO ACTION ON UPDATE NO ACTION); and when you run the project the home page is looks like this
